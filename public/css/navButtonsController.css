@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+ 
+.navButtons {
+	position:fixed;
+	left:45%;
+	top:250px;
+	width: 60px;
+	height: 60px;
+}
+.navButtons .subButton {
+	position:absolute;
+	left: 0px;
+	bottom: 0px;
+	cursor:pointer;
+}
+.subButton .buttonIcon { 
+	display:block; 
+	background-position:center;
+	background-repeat:no-repeat;
+	z-index:999;
+}
+.subButton .buttonIcon .item, .rotate {
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	vertical-align:middle;
+	position:absolute;
+}
+.navButtons .mainButton {
+   	z-index:1000;
+	 position:absolute;
+	 left:-30px;
+	 top:-30px;
+	 display:block;
+	 cursor:pointer;
+}
+ .mainButton .userHeadPortrait{
+  position:absolute;
+  left:20px;
+  top:20px;
+  display:inline-block;
+  width:60px;
+  height:60px;
+}
+.mainButton .circleCover{
+   position:absolute;
+   left:0px;
+   top:0px;
+   display:inline-block;
+   width:100px;
+   height:100px;
+}
+.subButton .buttonIcon {
+	position:relative;
+	bottom:0;
+	left:0;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/bg-item-2x.png);
+	 
+}
+.subButton .buttonIcon .item {
+	bottom:0;
+	left:0;
+}
+.metaicondetail {
+	background:#fff;
+	color:#fff;
+	border-radius:6px;
+	border:1px #333 solid;
+	min-width:80px;
+	max-width:300px;
+	overflow:hidden;
+	text-align: center;
+	position:absolute;
+	display:none;
+	top:-30px;
+	left:-20px;
+	z-index:1000;
+}
+.metaicondetail .inner {
+	border:2px #fff solid;
+	border-radius:6px;
+	background:#272727;
+	font-size:14px;
+	padding:5px;
+}
+ 
+ 

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta  charset="utf-8"/>
+<title>Words Structure Pratice</title>
+<script type="text/javascript" src="../javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../javascript/sentencesSlicer.js"></script>
+<link type="text/css" rel="stylesheet"  href="../css/sentencesSlicer.css"/>
+</head>
+<body>
+    <input type="button"  value="初始化句子" onclick="initSentence()"/>
+	<input type="button" value="使用默认句子" onclick="initS()"/>
+     <div class="whiteBack">
+	    <div class="workSpace">
+		    <div class="buttons">
+		       <div class="redo"><img class="pic" src="../images/redo.png"/> </div>
+			   <div class="replay"><img class="pic" src="../images/replay.png"/></div>
+			   <div class="next"><img class="pic" src="../images/next.png"/></div>
+			 </div>
+			 <img class="wr_tag" src="../images/right.png"/>
+			 <div class="note"></div>
+	     	<div class="origin_sentence"></div>
+		</div>
+		<div class="noteSpace"></div>
+	 </div>
+     <div class="sentenceManager">
+	 <div class="introduction">使用说明，按顺序添加句子，并设置其编号，按编号设置其匹配节点，有多个父节点则用逗号隔开<br/>
+	 没有父节点和并列节点则填零，下面是默认句子的输入格式:
+	 </div>
+     <table border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <th scope="col">&nbsp;句子内容</th>
+    <th scope="col">&nbsp;编号</th>
+    <th scope="col">&nbsp;父节点编号</th>
+    <th scope="col">&nbsp;并列节点编号</th>
+    <th scope="col">&nbsp;注释</th>
+  </tr>
+  <tr>
+    <td>&nbsp;Leaves,</td>
+    <td>&nbsp;1</td>
+    <td>&nbsp;0</td>
+    <td>&nbsp;0</td>
+    <td>&nbsp;树叶</td>
+  </tr>
+  <tr>
+    <td>&nbsp;usually board and flat,</td>
+    <td>&nbsp;2</td>
+    <td>&nbsp;1</td>
+    <td>&nbsp;0</td>
+    <td>&nbsp;形容词后置，扁而宽的树叶</td>
+  </tr>
+  <tr>
+    <td>&nbsp;take in energy from sunlight</td>
+    <td>&nbsp;3</td>
+    <td>&nbsp;1</td>
+    <td>&nbsp;4</td>
+    <td>&nbsp;谓语，从阳光中吸收能量</td>
+  </tr>
+  <tr>
+    <td>&nbsp;and carbon dioxide from air</td>
+    <td>&nbsp;4</td>
+    <td>&nbsp;1</td>
+    <td>&nbsp;3</td>
+    <td>&nbsp;并列结构，吸收二氧化碳</td>
+  </tr>
+  <tr>
+    <td>&nbsp;to survive</td>
+    <td>&nbsp;5</td>
+    <td>&nbsp;3,4</td>
+    <td>&nbsp;0</td>
+    <td>&nbsp;表目的,以生存</td>
+  </tr>
+</table>
+
+	 <textarea placeholder="句子" id="juzi"></textarea><input type="text" placeholder="编号" id="bianhao"/> <input type="text" placeholder="父节点" id="parent"/>
+	 <input type="text" placeholder="并列节点编号" id="binglie"/><input type="text" placeholder="注释" id="note_c"/>
+	   <input type="button" value="添加子句" onclick="addSubsentence()"/>
+	   <input type="button" value="结束添加" onclick="endAdd()"/>
+	   <div id="subContainer"></div>
+	   
+	 </div>
+	 
+</body>
+</html>

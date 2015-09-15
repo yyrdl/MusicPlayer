@@ -1,0 +1,381 @@
+ 
+.playercontainer{
+ width:100%;
+ text-align:center;
+ display:none;
+ z-index:1;
+}
+.playercontainer header h1{
+font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+color:#585858;
+font-size:28px;
+}
+.playercontainer  header h2{
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-style:italic;
+	}
+.playercontainer header h2 span{	
+	font-size:10px;
+	color:#7D7D7D;
+	}
+.playercontainer header h2 strong{
+	color:#800040;
+	font-size:14px;
+	}
+.playercontainer .surpport-note{
+	color:#F00;
+	font-weight:bold;
+	display:none;
+	}
+.playercontainer .surpport-note span{
+	 font-size:16px;
+	 padding:5px;
+	 display:block;
+	 position:relative;
+	}
+.playercontainer .vc-container
+ {
+	 position:absolute;
+	 left:29%;
+	 text-align:center;
+ }
+.playercontainer .vc-container .vc-cassete
+{
+	width:586px;
+	height:379px;
+	position:relative;
+	-webkit-transition:all 0.4s ease-in-out;
+	-mz-transition:all 0.4s ease-in-out;
+	-o-transition:all 0.4s ease-in-out;
+	-ms-transition:all 0.4s ease-in-out;
+	transition:all 0.4s ease-in-out;
+	}
+.playercontainer .vc-container .vc-cassete .vc-wheel{
+	width:125px;
+	height:125px;
+	border-radius:50%;
+	background:transparent url(../images/cs_wheel.png) no-repeat;
+	position:absolute;
+	}
+.playercontainer .vc-container .vc-cassete .vc-left-wheel
+{
+	left:109px;
+	top:110px;
+	box-shadow:0 0 0 70px #000;
+	 }
+.playercontainer .vc-container .vc-cassete .vc-right-wheel
+{
+	 top:110px;
+	 left:349px;
+	}
+.playercontainer .vc-container .vc-cassete .vc-front{
+	background:url(../images/cs_front.png) no-repeat;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	z-index:3;
+	}
+.playercontainer .vc-container .vc-cassete .vc-back{
+	background:url(../images/cs_back.png) no-repeat;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	z-index:1;
+	}
+.playercontainer .vc-container .vc-cassete .vc-sideA{
+	display:block;
+	}	
+.playercontainer .vc-container .vc-cassete .vc-sideA span{
+    font-weight:bold;
+	font-size:18px;
+	color:#333;
+	position:absolute;
+	left:70px;
+	top:84px;
+}
+.playercontainer .vc-container .vc-cassete .vc-sideB{
+	
+	display:none;
+	-webkit-transform:rotate3d(0,1,0,180deg);
+	}
+.playercontainer .vc-container .vc-cassete .vc-sideB span{
+    font-weight:bold;
+	font-size:18px;
+	color:#333;
+	position:absolute;
+	left:70px;
+	top:84px;
+}
+.playercontainer .vc-container .vc-loader
+{
+	background:url(../images/ajax-loader.gif) no-repeat;
+	position:absolute;
+	left:46%;
+	top:390px;
+	width:31px;
+	height:31px;
+	display:none;
+	}
+@-webkit-keyframes rotateLeft {
+	0% { -webkit-transform: rotate(0deg) translateZ(-1px); }
+	100% { -webkit-transform: rotate(-360deg) translateZ(-1px); }
+}
+@-webkit-keyframes rotateRight {
+	0% { -webkit-transform: rotate(0deg) translateZ(-1px); }
+	100% { -webkit-transform: rotate(360deg) translateZ(-1px); }
+}
+@-moz-keyframes rotateLeft {
+	0% { -moz-transform: rotate(0deg) translateZ(-1px); }
+	100% { -moz-transform: rotate(-360deg) translateZ(-1px); }
+}
+@-moz-keyframes rotateRight {
+	0% { -moz-transform: rotate(0deg) translateZ(-1px); }
+	100% { -moz-transform: rotate(360deg) translateZ(-1px); }
+}
+@-o-keyframes rotateLeft {
+	0% { -o-transform: rotate(0deg) translateZ(-1px);}
+	100% { -o-transform: rotate(-360deg) translateZ(-1px);}
+}
+@-o-keyframes rotateRight {
+	0% { -o-transform: rotate(0deg) translateZ(-1px); }
+	100% { -o-transform: rotate(360deg) translateZ(-1px); }
+}
+@-ms-keyframes rotateLeft {
+	0% { -ms-transform: rotate(0deg) translateZ(-1px); }
+	100% { -ms-transform: rotate(-360deg) translateZ(-1px); }
+}
+@-ms-keyframes rotateRight {
+	0% { -ms-transform: rotate(0deg) translateZ(-1px); }
+	100% { -ms-transform: rotate(360deg) translateZ(-1px); }
+}
+@keyframes rotateLeft {
+	0% { transform: rotate(0deg) translateZ(-1px); }
+	100% { transform: rotate(-360deg) translateZ(-1px); }
+}
+@keyframes rotateRight {
+	0% { transform: rotate(0deg) translateZ(-1px); }
+	100% { transform: rotate(360deg) translateZ(-1px); }
+}
+.playercontainer .vc-container .vc-control
+{
+   position:absolute;
+   top:390px;
+   left:-50px;
+   width:700px;
+   height:auto;
+}
+.playercontainer .vc-container .vc-control .vc-volum-wrap
+{
+    width:130px;
+    height:130px;
+    background: -moz-linear-gradient(top, rgba(170,170,170,0.35) 0%, rgba(255,255,255,0.44) 50%, rgba(255,255,255,0.53) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(170,170,170,0.35)), color-stop(50%,rgba(255,255,255,0.44)), color-stop(100%,rgba(255,255,255,0.53)));
+	background: -webkit-linear-gradient(top, rgba(170,170,170,0.35) 0%,rgba(255,255,255,0.44) 50%,rgba(255,255,255,0.53) 100%);
+	background: -o-linear-gradient(top, rgba(170,170,170,0.35) 0%,rgba(255,255,255,0.44) 50%,rgba(255,255,255,0.53) 100%);
+	background: -ms-linear-gradient(top, rgba(170,170,170,0.35) 0%,rgba(255,255,255,0.44) 50%,rgba(255,255,255,0.53) 100%);
+	background: linear-gradient(to bottom, rgba(170,170,170,0.35) 0%,rgba(255,255,255,0.44) 50%,rgba(255,255,255,0.53) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59aaaaaa', endColorstr='#87ffffff',GradientType=0 );
+	border-radius:50%;
+	position:absolute;
+	left:0px;
+}
+.playercontainer .vc-container .vc-control .vc-volum-wrap .vc-volum
+{
+  position:absolute;
+  left:8px;
+  top:8px;
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  box-shadow:3px 8px 4px  #111;
+  cursor:pointer;
+}
+.playercontainer .vc-container .vc-control .vc-volum-wrap .vc-volum .vc-knob
+{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:url("../images/knob.jpg");
+  border-radius:50%;
+  border:1px solid white;
+   -webkit-transform : rotate(130deg)  translateZ(-1px);
+  -ms-transform : rotate(130deg)  translateZ(-1px);
+ -o-transform : rotate(130deg)  translateZ(-1px);
+  -mz-transform: rotate(130deg)  translateZ(-1px);
+transform : rotate(130deg) translateZ(-1px) translateZ(-1px)
+}
+.playercontainer .vc-container .vc-control .vc-volum-wrap .vc-volum .vc-knob span
+{
+  position:absolute;
+  top:55px;
+  left:4px;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background-color:gray;
+}
+.playercontainer .vc-container .vc-control .vc-buttons-wrap
+{
+  width:500px;
+  height:58px;
+  position:absolute;
+  left:170px;
+  top:15px;
+  background: -moz-linear-gradient(top, rgba(170,170,170,0.35) 0%, rgba(255,255,255,0.44) 50%, rgba(255,255,255,0.53) 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(170,170,170,0.35)), color-stop(50%,rgba(255,255,255,0.44)), color-stop(100%,rgba(255,255,255,0.53)));
+	background: -webkit-linear-gradient(top, rgba(170,170,170,0.35) 0%,rgba(255,255,255,0.44) 50%,rgba(255,255,255,0.53) 100%);
+	background: -o-linear-gradient(top, rgba(170,170,170,0.35) 0%,rgba(255,255,255,0.44) 50%,rgba(255,255,255,0.53) 100%);
+	background: -ms-linear-gradient(top, rgba(170,170,170,0.35) 0%,rgba(255,255,255,0.44) 50%,rgba(255,255,255,0.53) 100%);
+	background: linear-gradient(to bottom, rgba(170,170,170,0.35) 0%,rgba(255,255,255,0.44) 50%,rgba(255,255,255,0.53) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59aaaaaa', endColorstr='#87ffffff',GradientType=0 );
+	padding:10px;
+	border-radius:10px;
+	font-size:10px;
+	color:#333;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  
+}
+ 
+  .vc-play
+{
+  background:url("../images/metal.jpg");
+  width:110px;
+  height:49px;
+  display:inline-block;
+  border-radius:9px 0px 0px 9px;
+  margin-right:0px;
+  margin-top:0px;
+  box-shadow:0px 5px 4px #111;
+  border:1px solid white;
+  cursor:pointer;
+  position:absolute;
+  left:25px;
+}
+  .vc-play div
+{
+  position:relative;
+  left:-11px;
+  bottom:-28px;
+}
+ .vc-play div span 
+{
+  display:inline-block;
+  width:0px;
+  height:0px;
+  border-width:7px 0px 7px 7px;
+  border-style:solid;
+  border-color: transparent transparent transparent  gray ;
+}
+    .vc-rewind
+{
+  background:url("../images/metal.jpg");
+  width:90px;
+  height:49px;
+  display:inline-block;
+  box-shadow:-1px 5px 4px #111;
+   border:1px solid white;
+   cursor:pointer;
+    position:absolute;
+  left:137px;
+}
+  .vc-rewind div
+{
+  position:relative;
+  left:-11px;
+  bottom:-28px;
+}
+  .vc-rewind div span
+{
+  display:inline-block;
+  border-width:7px 7px 7px 0px;
+  border-style:solid;
+  border-color:transparent gray transparent  transparent;
+}
+   .vc-forward
+{
+  background:url("../images/metal.jpg");
+  width:90px;
+  height:49px;
+  display:inline-block;
+  
+   box-shadow:-1px 5px 4px #111;
+    border:1px solid white;
+	cursor:pointer;
+	 position:absolute;
+  left:229px;
+}
+  .vc-forward div
+{
+  position:relative;
+  left:-11px;
+  bottom:-28px;
+  
+}
+   .vc-forward div span
+{
+  display:inline-block;
+  width:0px;
+  height:0px;
+  border-width:7px 0px 7px 7px;
+  border-style:solid;
+  border-color: transparent transparent transparent  gray ;
+}
+  .vc-stop
+{
+  background:url("../images/metal.jpg");
+  width:90px;
+  height:49px;
+  display:inline-block;
+   
+   box-shadow:-1px 5px 4px #111;
+    border:1px solid white;
+    cursor:pointer;
+	 position:absolute;
+  left:318px;
+}
+   .vc-stop div 
+{
+  position:relative;
+  left:-7px;
+  bottom:-28px;
+  padding:0px;
+  margin:0px;
+}
+   .vc-stop div span
+{
+ display:inline-block;
+ border-width:7px 7px 7px 7px;
+ border-style:solid;
+ border-color:gray;
+}
+   .vc-switch
+{
+  background:url("../images/metal.jpg");
+  width:90px;
+  height:49px;
+  display:inline-block;
+  border-radius:0px 9px 9px 0px;
+  box-shadow:-1px 5px 4px #111;
+  border:1px solid white;
+  cursor:pointer;
+   position:absolute;
+  left:409px;
+}
+  .vc-switch div
+{
+  position:relative;
+  left:4px;
+  bottom:-28px;
+  
+}
+  .vc-switch div span
+{
+ display:inline-block;
+ border-width:7px 7px 7px 7px;
+ border-style:solid;
+ border-color:transparent;
+}
+ 
+	

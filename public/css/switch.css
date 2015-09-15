@@ -1,0 +1,27 @@
+.roundabout-holder {/*这个是整个旋转特效的容器，height和width属性可以调整旋转特效的范围*/
+list-style: none;
+padding: 0;
+margin: 0;
+height: 500px;
+width: 800px;
+position:relative;
+left:20%;
+top:40px;
+}
+.roundabout-moveable-item {/*这个是每个旋转元素的属性*/
+cursor: auto;
+}
+.roundabout-in-focus {
+ cursor: pointer;
+}
+.roundabout-in-focus:hover {
+ box-shadow:0px 0px 10px purple;
+}
+#c2  img{
+  width:50%;
+  height:50%;
+  border-radius:10px 10px 10px 10px;
+}
+body{
+ background:url(../image/bg.jpg) fixed no-repeat top;
+}

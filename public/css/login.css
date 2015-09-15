@@ -1,0 +1,118 @@
+
+.Login_container-circle_left {
+border-radius: 100px 0 0 100px;
+width: 100px;
+height: 200px; 
+background-color:#00BBFF;
+position:absolute;
+left:300px;
+}
+
+.Login_container-circle_right {
+border-radius: 0 100px 100px 0;
+width: 100px;
+height: 200px; 
+background-color:#00BBFF;
+position:absolute;
+right:300px;
+}
+.Login_container{
+	width:800px;
+	height:200px;
+	position:absolute;
+	left:20%;
+	top:150px;
+}
+.Login_container-rectangle{
+	height:200px;
+	width:0;
+	background-color:#9999FF;
+	position:absolute;
+	left:400px;
+	text-align:center
+}
+.Login_container-rectangle-form{
+	display:none;
+	font-weight:bold;
+	position:relative;
+	color:white;
+}
+.Login_container-rectangle-form-pname {
+	height:30px;
+	margin-top:35px;
+	display:block;
+    margin-left:15px;
+}
+.Login_container-rectangle-form-pname input{
+  margin-left:5px;
+}
+.Login_container-rectangle-form-ppassword{
+	height:30px;
+	margin-top:35px;
+	display:block;
+	margin-left:15px;
+}
+.Login_container-rectangle-form-ppassword input{
+ margin-left:5px;
+}
+.Login_container-rectangle-form-ppassword span span{
+ display:inline-block;
+ height:10px;
+ width:15px;
+}
+#Login_Buttons{
+ margin-top:5px;
+}
+#A_Login{
+margin-top:4px;
+margin-left:40px;
+}
+#Login{
+display:inline-block;
+ margin-left:20px;
+ cursor:pointer;
+ 
+}
+#Login:hover{
+ color:#ccc;
+}
+#Login:active{
+ color:black;
+}
+#Reset{
+ display:inline-block;
+ margin-left:30px;
+ cursor:pointer;
+}
+#Reset:hover{
+color:#ccc;
+}
+#Reset:active{
+ color:black;
+}
+.Login_cover{
+ position:absolute;
+ width:200px;
+ height:200px;
+ background-color:#00BBFF;
+ border-radius:50% 50% 50% 50%;
+ display:none;
+  
+}
+#Login_Regist{
+  cursor:pointer;
+  color:#ccc;
+  display:inline-block;
+}
+#Login_Regist:hover{
+ color:blue;
+}
+.forgivePass{
+   display:inline-block;
+   margin-left:60px;
+   cursor:pointer;
+   color:#ccc;
+}
+.forgivePass:hover{
+ color:blue;
+}

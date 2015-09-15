@@ -1,0 +1,46 @@
+
+ <div class="cassetteEdit">
+  <div id="cassetteEditAlert"><input type="text" id="cassetteEditName" placeholder="起个名儿吧 ^-^"/><div id="cassetteEditNameOK"><span>我起好了</span></div><div id="cassetteEditNameGiveUp"><span>放弃</span></div></div>
+   <div class="cassetteEdit_head">
+     <div id="cassetteEdit_headCancel" ><span>取消</span></div>
+	 <div id="cassetteEdit_headSave" ><span>保存</span></div>
+   </div>
+
+  <div class="cassetteEdit_container">
+    <div class="cassetteEdit_img"></div>
+    <textarea id="cassetteEdit_intro" placeholder="说些什么吧 ^-^"></textarea>
+   
+    <div class="cassetteEdit_sideA" sideName="sideA">
+     <div class="cassetteEdit_bar">
+	     <span class="cassetteEdit_fontM">sideA</span>
+		 <div class="cassetteEdit_edit" onclick="deleteSong(1)"><div>删除</div></div>
+		 <div class="cassetteEdit_edit" onclick="editSide(1)"><div>编辑</div></div>
+	</div>
+     
+	 <!--<div songID="123" class="cassetteEdit_side" name="冰雨"><input type="radio" status="0" /><span>冰雨</span></div>
+	 <div songID="123" class="cassetteEdit_side" name="冰雨"><input type="radio" status="0" /><span>冰雨</span></div>
+	 <div songID="123" class="cassetteEdit_side" name="冰雨"><input type="radio" status="0" /><span>冰雨</span></div>-->
+	</div>
+	 
+   <div class="cassetteEdit_sideB" sideName="sideB">
+      <div class="cassetteEdit_bar">
+      <span class="cassetteEdit_fontM">sideB</span>
+	  <div class="cassetteEdit_edit" onclick="deleteSong(2)"><div>删除</div></div>
+	  <div class="cassetteEdit_edit" onclick="editSide(2)"><div>编辑</div></div>
+	  </div>
+   </div>
+   <div class="cassetteEdit_searchKJ">
+     <div class="cassetteEdit_search">
+	    <input type="text" id="cassetteEdit_searchArea" placeholder="&nbsp;歌&nbsp;曲&nbsp;名" />
+		<div class="cassetteEdit_searchButton" onclick="searchSongs()"><div>搜&nbsp;索</div></div>
+	 </div>
+     <ul type="none" class="cassetteEdit_searchResult" id="cESR">
+	 <!--
+	  <li><div class="cassetteEdit_songName">冰雨</div><div class="cassetteEdit_artistName">刘德华</div><div class="cassetteEdit_shiting" songID="123" onclick="tryListen()">试&nbsp;听</div><div class="cassetteEdit_add" songID="">添&nbsp;加</div></li>
+	  <li><div class="cassetteEdit_songName">冰雨</div><div class="cassetteEdit_artistName">刘德华</div><div class="cassetteEdit_shiting">试&nbsp;听</div><div class="cassetteEdit_add">添&nbsp;加</div></li>
+	 -->
+	</ul>
+   </div>   
+</div>
+</div>
+ 

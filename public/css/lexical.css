@@ -1,0 +1,192 @@
+body{
+margin:0px;
+background-color:#333;
+}
+li{
+	border-color:solid black;
+	font-weight:700;
+}
+li:focus{
+	background-color:#333;
+	}
+.editorC{
+ margin:0 auto;
+ padding:0px;
+ }
+ .editorHead{
+ positon:relative;
+ height:70px;
+ background-color:black;
+ }
+ .authorPortrait{
+ width:60px;
+ height:60px;
+ margin-left:20px;
+ margin-top:5px;
+ border-radius:50% ;
+ display:inline-block;
+ }
+.wsc{
+width:650px;
+height:400px;
+border:solid 2px;
+background-color:#000;
+white-space:pre;//important
+font-weight:700;
+border-color:black;
+margin-right:auto;
+margin-left:auto;
+overflow:auto;
+}
+.editorWrapper{
+margin-top:10px;
+}
+#ws{
+	color:#CCC;
+}
+.ecircle{
+ width:4px;
+ height:4px;
+ background-color:#ccc;
+ display:block;
+ margin-bottom:7px;
+}
+.circleW{
+height:auto;
+width:15px;
+margin-left:40px;
+display:inline-block;
+}
+.buttons{
+position:absolute;
+top:70px;
+left:-50px;
+width:60px;
+height:500px;
+background-color:black;
+-webkit-transition:all 0.4s ease-in-out;
+-mz-transition:all 0.4s ease-in-out;
+-o-transition:all 0.4s ease-in-out;
+-ms-transition:all 0.4s ease-in-out;
+transition:all 0.4s ease-in-out;
+}
+.buttons:hover{
+left:0px;
+-webkit-animation: moveToLeft 0.5s;
+-ms-animation : moveToLeft 0.5s;
+-o-animation: moveToLeft 0.5s;
+-mz-animation: moveToLeft o.5s;
+animation: moveToLeft 0.5s;
+}
+.runCode{
+ margin-left:15px;
+ margin-top:30px;
+ width:25px;
+ height:30px;
+ cursor:pointer;
+}
+.dataIco{
+ margin-left:10px;
+ margin-top:30px;
+ width:35px;
+ height:35px;
+ cursor:pointer;
+}
+.parseCode
+{
+margin-left:10px;
+ margin-top:30px;
+ width:30px;
+ height:30px;
+ cursor:pointer;
+}
+.clearConsole{
+margin-left:10px;
+ margin-top:30px;
+ width:35px;
+ height:35px;
+ cursor:pointer;
+}
+#console
+{
+  position:fixed;
+  bottom:0px;
+  right:0px;
+  background-color:#ccc;
+  border:blue;
+  color:red;
+}
+#consoleWindow{
+overflow:auto;
+}
+table{
+margin-left:300px;
+margin-right:auto;
+color:green;
+}
+td{
+width:400px;
+}
+.chead{
+ height:20px;
+ background-color:black;
+ cursor:move;
+}
+.grammer-head{
+color:green;
+}
+.grammer-keyWord{
+ color:#00F;
+}
+.grammer-operator{
+ color:red;
+}
+.grammer-punctuation{
+color:#F60;
+}
+.grammer-number
+{
+  color:#FC0;
+}
+.grammer-note{
+color:gray;
+}
+.grammer-variable{
+  color:#ccc;
+}
+.grammer-space{
+ width:6px;
+ display:inline-block; 
+}
+.grammer-char{
+color:yellow;
+}
+ .grammer-string{
+ color:#09F;
+ }
+ @-webkit-keyframes moveToLeft
+ {
+   0%{left:-50px};
+   100%{left:0px};
+ }
+ @-moz-keyframes moveToLeft
+ {
+  0%{left:-50px};
+   100%{left:0px};
+ }
+ @-ms-keyframes moveToLeft
+ {
+    0%{left:-50px};
+   100%{left:0px};
+ }
+ @-o-keyframes moveToLeft
+ {
+   0%{left:-50px};
+   100%{left:0px};
+ }
+ @keyframes moveToLeft
+ {
+   0%{left:-50px};
+   100%{left:0px};
+ }
+ 

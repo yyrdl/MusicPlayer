@@ -1,0 +1,301 @@
+﻿
+
+.cassetteEdit{
+width:1002px;
+height:auto;
+position:absolute;
+left:12%;
+top:60px;
+border:1px solid #ccc;
+display:none;
+z-index:4;
+}
+#cassetteEditAlert{
+z-index:2;
+position:absolute;
+left:100px;
+top:150px;
+width:360px;
+height:40px;
+background-color:#ccc;
+border:4px solid gray;
+display:none;
+}
+#cassetteEditName{
+margin-top:3px;
+width:200px;
+height:25px;
+display:inline-block;
+margin-left:10px;
+}
+#cassetteEditNameOK{
+display:inline-block;
+background-color:blue;
+color:white;
+ font-family:"幼圆";
+ width:70px;
+ height:25px;
+ border-radius:1px;
+ margin-left:10px;
+ text-align:center;
+}
+#cassetteEditNameOK:hover{
+font-weight:bold;
+}
+#cassetteEditNameOK:active{
+ font-weight:bold;
+ background-color:white;
+ color:blue;
+}
+#cassetteEditNameOK span{
+ display:block;
+ margin-top:2px;
+}
+#cassetteEditNameGiveUp{
+ background-color:white;
+ color:black;
+ font-family:"幼圆";
+ display:inline-block;
+ width:50px;
+ height:25px;
+ border-radius:1px;
+ margin-left:6px;
+ text-align:center;
+}
+#cassetteEditNameGiveUp:hover{
+font-weight:bold;
+}
+#cassetteEditNameGiveUp:active{
+font-weight:bold;
+background-color:black;
+color:white;
+}
+#cassetteEditNameGiveUp span{
+ display:block;
+ margin-top:2px;
+}
+.cassetteEdit_head{
+width:1003px;
+height:40px;
+background-color:skyblue;
+}
+.cassetteEdit_head div{
+display:inline-block;
+font-family:"幼圆";
+ width:40px;
+ height:25px;
+ margin-left:10px;
+ background-color:#ccc;
+ border-radius:2px;
+ text-align:center;
+ margin-top:3px;
+ cursor:pointer;
+}
+.cassetteEdit_head div:hover{
+ font-weight:bold;
+}
+.cassetteEdit_head div :active{
+   font-weight:bold;
+  background-color:white;
+}
+.cassetteEdit_head div span{
+ display:block;
+ margin-top:3px;
+}
+ 
+.cassetteEdit_container{
+ width:1000px;
+ height:450px;
+ border:2px solid gray;
+ background-color:pink;
+ position:relative;
+}
+.cassetteEdit_img{
+position:relative;
+left:5px;
+top:5px;
+width:250px;
+height:150px;
+border:1px solid #ccc;
+background-color:white;
+}
+#cassetteEdit_intro{
+margin-left:5px;
+margin-top:7px;
+width:246px;
+height:283px;
+}
+.cassetteEdit_searchKJ{
+position:absolute;
+right:0px;
+top:0px;
+width:450px;
+height:448px;
+border:1px solid #ccc;
+background-color:white;
+}
+.cassetteEdit_search{
+position:relative;
+top:2px;
+left:2%;
+border:1px solid black;
+width:430px;
+height:30px;
+}
+#cassetteEdit_searchArea{
+width:370px;
+height:24px;
+font-size:15px;
+}
+.cassetteEdit_searchButton{
+ position:absolute;
+right:0px;
+top:0px;
+ height:30px;
+ width:58px;
+ background-color:blue;
+ color:white;
+ font-family:"宋体";
+ font-weight:bold;
+ text-align:center;
+ cursor:pointer;
+ }
+ .cassetteEdit_searchButton div{
+    display:inline-block;
+    margin-top:5px;
+ }
+ .cassetteEdit_searchButton:hover{
+	 background-color:#06C;
+ }
+ .cassetteEdit_searchButton:active{
+    background-color:white;
+	color:black;
+ } 
+ .cassetteEdit_searchResult{
+  margin-top:10px;
+  width:410px;
+  height:auto;
+ }
+ li div{
+ display:inline-block;
+ }
+ li{
+ margin-top:6px;
+ }
+ .cassetteEdit_songName{
+  font-family:"楷体";
+  color:blue;
+  position:absolute;
+  left:4px;
+ }
+.cassetteEdit_artistName{
+font-family:"楷体";
+color:skyblue;
+}
+ .cassetteEdit_shiting{
+ width:45px;
+ height:20px;
+ text-align:center;
+ background-color:skyblue;
+ font-family:"幼圆";
+ font-size:15px;
+ float:right;
+ margin-right:4px;
+ border-radius:2px;
+ cursor:pointer;
+ }
+ .cassetteEdit_shiting:hover{
+ background-color:#06c;
+ color:white;
+ }
+ .cassetteEdit_shiting:active{
+  background-color:white;
+  color:black;
+ }
+ .cassetteEdit_add{
+ width:45px;
+ height:20px;
+ text-align:center;
+ background-color:skyblue;
+ font-family:"幼圆";
+ font-size:15px;
+ float:right;
+ margin-right:4px;
+ border-radius:2px;
+ cursor:pointer;
+ border-radius:2px;
+ }
+ .cassetteEdit_add:hover{
+ background-color:#06c;
+ color:white;
+ }
+ .cassetteEdit_add:active{
+  background-color:white;
+  color:black;
+ }
+ .cassetteEdit_sideA{
+ width:283px;
+ height:210px;
+ border:1px solid red;
+ position:absolute;
+ left:260px;
+ top:5px;
+ overflow-y:scroll;
+ overflow-x:hidden;
+ background-color:white;
+ }
+ .cassetteEdit_sideB{
+ position:absolute;
+ left:260px;
+ bottom:3px;
+ width:283px;
+ height:210px;
+ border:1px solid red;
+ overflow-y:scroll;
+ overflow-x:hidden;
+ background-color:white;
+ }
+ .cassetteEdit_side{
+   border:1px solid #ccc;
+   margin-top:3px;
+ }
+ .cassetteEdit_side span{
+  font-family:"楷体";
+ }
+ .cassetteEdit_bar{
+  background-color:skyblue;
+  width:266px;
+  height:25px;
+ }
+ .cassetteEdit_fontM{
+ font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-style:italic;
+	color:purple;
+	margin-left:10px;
+	margin-top:4px;
+ }
+ .cassetteEdit_edit{
+      font-family:"幼圆";
+	  float:right;
+	  margin-right:5px;
+	  width:40px;
+	  height:22px;
+	  margin-top:1px;
+	  background-color:#E3E3E3;
+	  color:#001;
+	  text-align:center;
+	  border-radius:2px;
+	  cursor:pointer;
+ }
+ .cassetteEdit_edit:hover{
+	 color:black;
+	 font-weight:bold;
+ }
+ .cassetteEdit_edit:active{
+   background-color:#FFF;
+   color:#202020;
+ }
+ .cassetteEdit_edit div{
+   margin-top:1px;
+ }
+ 
